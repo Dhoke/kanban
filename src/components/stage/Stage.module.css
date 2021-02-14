@@ -1,0 +1,11 @@
+.column {
+    width: 15vw;
+    min-height: 70vh;
+    background-color: #c3c3c3;
+    padding: 1rem 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}

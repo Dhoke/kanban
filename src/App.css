@@ -1,5 +1,21 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.kanbanColumns {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+.titleArea {
+  width: 100vw;
+}
+
+.titleArea h1 {
+  font-size: 5rem;
 }
 
 .App-logo {

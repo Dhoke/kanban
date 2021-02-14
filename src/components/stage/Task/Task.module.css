@@ -1,0 +1,6 @@
+.task {
+    background-color: bisque;
+    cursor: pointer;
+    max-width: 15vw;
+    min-width: 15vw;
+}

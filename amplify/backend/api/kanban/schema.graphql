@@ -1,0 +1,15 @@
+enum Stage {
+  CANDIDATE
+  TODO
+  IN_PROGRESS
+  SUSPENDED
+  BLOCKED
+  COMPLETE
+}
+
+type Task @model {
+  id: ID!
+  item: String!
+  description: String
+  stage: Stage
+}

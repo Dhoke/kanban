@@ -1,0 +1,52 @@
+.modalBack {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalCard {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+    background-color: #ddd;
+}
+
+.modalHeader {
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+
+.modalInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.modalControls {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modalControls button {
+    border: none;
+    padding: 0.25rem;
+}
+
+.cancel {
+    margin-right: 1rem;
+    background-color: tomato;
+}
+
+.confirm {
+    background-color: forestgreen;
+    color: white;
+}
