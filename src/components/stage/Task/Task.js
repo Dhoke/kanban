@@ -10,22 +10,16 @@ const Task = (props) => {
     const [x, setX] = useState(-1)
 
     const startDrag = (e) => {
-        const element = taskBox.current.getBoundingClientRect()
-        console.log(element)
-        console.log(`Mouse is at (${e.clientX},${e.clientY})`)
-        console.log(`X is at (${e.clientX},${e.clientY})`)
-        setX(e.clientX - (element.width / 2))
-        setY(e.clientY)
+        // const element = taskBox.current.getBoundingClientRect()
+        setX(e.clientX - 25)
+        setY(e.clientY - 25)
         setIsDragging(true)
     }
 
     const dragTask = (e) => {
         if (isDragging) {
-            const element = taskBox.current.getBoundingClientRect()
-            console.log(element)
-            setX(e.clientX - (element.width / 2))
-            setY(e.clientY)
-
+            setX(e.clientX - 25)
+            setY(e.clientY - 25)
         }
     }
 
@@ -35,9 +29,9 @@ const Task = (props) => {
     }
 
     const style = {}
-    if(isDragging) {
+    if (isDragging) {
         style['position'] = 'absolute'
-        style['top']  = y
+        style['top'] = y
         style['left'] = x
     }
 
